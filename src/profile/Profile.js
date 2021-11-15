@@ -2,13 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Profile = (props) => {
-  // Inline Style Object
-  const styleObject = {
-    backgroundColor: "orange",
-    height: "30px",
-    border: "black",
-    borderRadius: "10%",
-  };
   return (
     <div className="App">
       <h2> {props.children}</h2>
@@ -16,7 +9,12 @@ const Profile = (props) => {
       <h2> Bio : {props.bio} </h2>
       <h2> Profession : {props.profession} </h2>
       <button
-        style={styleObject}
+        style={{
+          backgroundColor: "orange",
+          height: "30px",
+          border: "black",
+          borderRadius: "10%",
+        }}
         onClick={() => props.handleName(props.fullName)}
       >
         ClickMe
