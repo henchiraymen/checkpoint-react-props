@@ -1,5 +1,6 @@
 import "./App.css";
 import Profile from "./profile/Profile.js";
+import aymenPhoto from "./assets/photo.jpg";
 
 function App() {
   const handleName = (name) => alert(`My name is : ${name}`);
@@ -11,7 +12,7 @@ function App() {
         profession="Junior Full Stack JS Developer"
         handleName={handleName}
       >
-        <img src="/photo.jpg" alt="aymen henchir" />
+        <img src={aymenPhoto} alt="aymen henchir" />
       </Profile>
     </div>
   );
